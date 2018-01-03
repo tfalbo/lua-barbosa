@@ -1,0 +1,117 @@
+/** {
+  border: 1px solid hotpink;
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Arapey');
+
+a:hover, a:active{
+  color: #E41219;
+  text-decoration: none;
+}
+
+a:link , a:visited{
+  color: #32323;
+  text-decoration: none;
+}
+
+
+
+html{
+  height:95%;
+  margin: 0 auto;
+}
+
+
+body {
+  margin: 0 auto;
+  color: #323232;
+  font-family: "Arapey", sans-serif;
+  font-weight: 300;
+}
+
+header {
+  margin-top:50px;
+  width: 100%;
+  height: 95px;
+  background-color: rgba(251,251,241,0.65);
+}
+
+.header-content{
+  width: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.logo {
+  padding: 10px 5px 10px 5px;
+  order: 1;
+  width: 20%;
+  height: 70px;
+  display: flex;
+  vertical-align: middle;
+}
+
+.nav{
+  width: 74%;
+  display: flex;
+  justify-content: space-between;
+  order: 2;
+  height: 60px;
+  vertical-align: middle;
+}
+
+.navlink{
+  margin: auto;
+  width: 15%;
+  height: 35px;
+  text-align: center;
+
+}
+
+.navlink > a {
+  font-family: "Arapey", sans-serif;
+  text-decoration: none;
+  font-size: 28px;
+  color: #323232;
+}
+
+.navlink > a:active, a:hover{
+  color : #E41219;
+}
+
+
+.content {
+      min-height: 70%;
+      padding: 20px;
+      padding-bottom: 20px;
+    }
+
+footer {
+      padding-left: 50px;
+      padding-right: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      margin-bottom: -50px;
+      background-color: rgba(251,251,241,0.65);
+    }
+
+.seletor-idiomas {
+    color:#323232;
+
+}
+
+.pt{
+  color:#E41219;
+}
+
+/* For iPad and larger screens */
+@media screen and (min-width: 768px) {
+  .logo {
+    width:25%;
+  }
+}
