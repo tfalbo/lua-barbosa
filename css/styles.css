@@ -4,6 +4,12 @@
 
 @import url('https://fonts.googleapis.com/css?family=Arapey');
 
+@font-face {
+  font-family: 'Bodoni';
+  src:  url('../fonts/Bodoni.woff2') format('woff2'),
+        url('../fonts/Bodoni.woff') format('woff');
+}
+
 a:hover, a:active{
   color: #E41219;
   text-decoration: none;
@@ -72,9 +78,9 @@ header {
 }
 
 .navlink > a {
-  font-family: "Arapey", sans-serif;
+  font-family: "Bodoni", sans-serif;
   text-decoration: none;
-  font-size: 28px;
+  font-size: 24px;
   color: #323232;
 }
 
