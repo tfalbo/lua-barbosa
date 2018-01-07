@@ -130,9 +130,9 @@ footer > *{
 @media screen and (min-width: 768px) {
   header {
     width: 100%;
-    height: 13%;
+    height: 15%;
     background-color: rgba(0,0,0,0.20);
-    margin-top: 60px;
+    margin-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -151,34 +151,34 @@ footer > *{
   }
 
   .nav{
-    width: 76%;
+    width: 78%;
     border-top: none;
   }
 
   .navlink > a {
     font-family: "Bodoni", sans-serif;
     text-decoration: none;
-    font-size: 27px;
+    font-size: 24px;
   }
 
 footer {
-        height: 7%;
+        height: 8%;
         padding-left: 20px;
         padding-right: 20px;
-        vertical-align: middle;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
       }
 
   footer > *{
         width: auto;
+
   }
 
   .copyright, .seletor-idioma {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .redes-sociais img{
-    height: 30px;
+    height: 24px;
     margin-left: 10px;
     margin-right: 10px;
   }
