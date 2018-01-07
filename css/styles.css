@@ -1,6 +1,3 @@
-/** {
-  border: 1px solid hotpink;
-}*/
 
 @import url('https://fonts.googleapis.com/css?family=Arapey');
 
@@ -10,73 +7,80 @@
         url('../fonts/Bodoni.woff') format('woff');
 }
 
+/* * {
+  border: 1px solid hotpink;
+} */
 a:hover, a:active{
-  color: #E41219;
+  color: #CFAE00;
   text-decoration: none;
 }
 
-a:link, a:visited{
-  color: #32323;
+a:link , a:visited{
+  color: rgba(255,255,255,0.70);
   text-decoration: none;
 }
 
-
-
-html{
-  height:95%;
-  margin: 0 auto;
+html, body, .container{
+  height: 100%;
 }
 
 
 body {
-  margin: 0 auto;
-  color: #323232;
+  width: 100%
+  color: rgba(255,255,255,0.70);
   font-family: "Arapey", sans-serif;
   font-weight: 300;
+  overflow: hidden;
+
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+
 header {
-  margin-top:50px;
   width: 100%;
-  height: 120px;
-  background-color: rgba(251,251,241,0.65);
+  height: 17%;
+  background-color: rgba(0,0,0,0.20);
 }
 
 .header-content{
-  width: auto;
-  margin-left: 50px;
-  margin-right: 50px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 .logo {
-  padding: 10px 5px 10px 5px;
   order: 1;
-  width: 20%;
-  height: 100px;
+  width: 100%;
   display: flex;
-  vertical-align: middle;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 .logo img{
-  height: 100px;
+  margin: auto;
+  order: 1;
+  width:50%;
+  align-self: center;
 }
-
 .nav{
-  width: 74%;
+  order: 2;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  order: 2;
-  height: 60px;
   vertical-align: middle;
+  border-top: 1px solid rgba(255,255,255,0.70);
+  padding-top: 5px;
 }
 
 .navlink{
   margin: auto;
-  width: 15%;
-  height: 35px;
+  display:inline-block;
+  min-height: 24px;
   text-align: center;
 
 }
@@ -84,45 +88,98 @@ header {
 .navlink > a {
   font-family: "Bodoni", sans-serif;
   text-decoration: none;
-  font-size: 24px;
-  color: #323232;
+  font-size: 16px;
 }
 
 .navlink > a:active, a:hover{
-  color : #E41219;
+  color : #CFAE00;
 }
 
 
 .content {
-      min-height: 70%;
-      padding: 20px;
-      padding-bottom: 20px;
-    }
+    flex: 1 0 auto;
+}
 
 footer {
-      padding-left: 50px;
-      padding-right: 50px;
+      height: 15%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 50px;
-      margin-bottom: -50px;
-      background-color: rgba(251,251,241,0.65);
-      font-size: 22px;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: rgba(0,0,0,0.20);
+      font-size: 16px;
+      color: rgba(255,255,255,0.70);
     }
 
-.seletor-idiomas {
-    color:#323232;
-
+footer > *{
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+      vertical-align: middle;
 }
 
-.pt{
-  color:#E41219;
+.redes-sociais img{
+  height: 24px;
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 /* For iPad and larger screens */
 @media screen and (min-width: 768px) {
-  .logo {
-    width:25%;
+  header {
+    width: 100%;
+    height: 13%;
+    background-color: rgba(0,0,0,0.20);
+    margin-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header-content{
+    align-items: justify;
+    vertical-align: middle;
+  }
+
+  .logo{
+    width: 20%;
+  }
+
+  .logo img{
+    width: 100%;
+  }
+
+  .nav{
+    width: 76%;
+    border-top: none;
+  }
+
+  .navlink > a {
+    font-family: "Bodoni", sans-serif;
+    text-decoration: none;
+    font-size: 27px;
+  }
+
+footer {
+        height: 7%;
+        padding-left: 20px;
+        padding-right: 20px;
+        vertical-align: middle;
+        margin-bottom: 50px;
+      }
+
+  footer > *{
+        width: auto;
+  }
+
+  .copyright, .seletor-idioma {
+    font-size: 24px;
+  }
+
+  .redes-sociais img{
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
