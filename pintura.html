@@ -1,25 +1,20 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Lua Barbosa - Artista Plástica</title>
+	<title>Lua Barbosa - Artista Plástica</title>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="css/styles-galeria.css" type="text/css">
 
-<link rel="stylesheet" href="supersized/supersized.css" type="text/css">
+	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
-<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
-
-<script type="text/javascript" src="supersized/supersized.min.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="owlcarousel/owl.carousel.min.js"></script>
-
-
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="owlcarousel/owl.carousel.min.js"></script>
 
 </head>
 
@@ -28,12 +23,12 @@
 	<header>
 			<div class="header-content">
 	     <div class="logo">
-	       	<img src="img/logo_amarelo.png">
+	       	<img src="img/logo_amarelo_fundobranco.png">
 	     </div>
 
 	     <div class="nav">
 	       <div class="navlink">
-	         <a href="pintura.html">Pintura</a>
+	         <a href="#" style="color:#CFAE00;">Pintura</a>
 	       </div>
 	       <div class="navlink">
 	         <a href="#">Ilustração</a>
@@ -55,7 +50,13 @@
 	   </header>
 
 		         <div class="content">
-		         </div>
+							 	<div class="galeria">
+									<div class="owl-carousel">
+									  <div class="galeria-img"><img src="img/1.jpg"> </div>
+									  <div class="galeria-img"><img src="img/3.jpg"> </div>
+									</div>
+								</div>
+					    </div>
 
 <footer>
 	<span class="copyright">©LUA BARBOSA 2017</span>
@@ -74,12 +75,11 @@
 
 
 <script type="text/javascript">
-$(function() {
-	$.supersized({
-		slide_interval : 5000,
-		transition_speed: 1000,
-		fit_portrait : 0,
-		slides : [ {image : 'img/1.jpg'},{image : 'img/2.jpg'},{image : 'img/3.jpg'},{image : 'img/4.jpg'}  ]
+$(document).ready(function(){
+	$('.owl-carousel').owlCarousel({
+			center: true,
+			items: 1,
+			autoHeight: true,
 	});
 });
 </script>

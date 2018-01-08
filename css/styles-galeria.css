@@ -7,6 +7,9 @@
         url('../fonts/Bodoni.woff') format('woff');
 }
 
+/* * {
+  border: 1px solid hotpink;
+} */
 
 a:hover, a:active{
   color: #CFAE00;
@@ -14,7 +17,7 @@ a:hover, a:active{
 }
 
 a:link , a:visited{
-  color: rgba(255,255,255,0.70);
+  color: rgba(0,0,0,0.70);
   text-decoration: none;
 }
 
@@ -25,7 +28,7 @@ html, body, .container{
 
 body {
   width: 100%
-  color: rgba(255,255,255,0.70);
+  color: rgba(0,0,0,0.70);
   font-family: "Arapey", sans-serif;
   font-weight: 300;
   overflow: hidden;
@@ -41,7 +44,6 @@ body {
 header {
   width: 100%;
   height: 17%;
-  background-color: rgba(0,0,0,0.20);
 }
 
 .header-content{
@@ -71,7 +73,7 @@ header {
   display: flex;
   justify-content: space-between;
   vertical-align: middle;
-  border-top: 1px solid rgba(255,255,255,0.70);
+  border-top: 1px solid rgba(0,0,0,0.70);
   padding-top: 5px;
 }
 
@@ -96,12 +98,15 @@ header {
 
 .content {
     flex: 1 0 auto;
+    height:60%;
+    align-items: center;
 }
 
 .galeria{
-  margin: 20px;
-  height: 10px;
+  margin: 0 auto;
+  width: 80%;
 }
+
 
 footer {
       height: 15%;
@@ -110,9 +115,8 @@ footer {
       align-items: center;
       flex-wrap: wrap;
       align-items: center;
-      background-color: rgba(0,0,0,0.20);
       font-size: 16px;
-      color: rgba(255,255,255,0.70);
+      color: rgba(0,0,0,0.70);
     }
 
 footer > *{
