@@ -10,11 +10,11 @@
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<link rel="stylesheet" href="css/styles-galeria.css" type="text/css">
 
-	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
 	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="owlcarousel/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
 
 </head>
 
@@ -51,10 +51,10 @@
 
 		         <div class="content">
 							 	<div class="galeria">
-									<div class="owl-carousel">
 									  <div class="galeria-img"><img src="img/1.jpg"> </div>
-									  <div class="galeria-img"><img src="img/3.jpg"> </div>
-									</div>
+										<div class="galeria-img"><img src="img/2.jpg"> </div>
+										<div class="galeria-img"><img src="img/3.jpg"> </div>
+									  <div class="galeria-img"><img src="img/4.jpg"> </div>
 								</div>
 					    </div>
 
@@ -76,12 +76,9 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
-	$('.owl-carousel').owlCarousel({
-			center: true,
-			items: 1,
-			autoHeight: true,
-	});
+	$('.galeria').slick();
 });
+
 </script>
 </div>
 </body>

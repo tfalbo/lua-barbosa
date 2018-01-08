@@ -7,9 +7,6 @@
         url('../fonts/Bodoni.woff') format('woff');
 }
 
-/* * {
-  border: 1px solid hotpink;
-} */
 
 a:hover, a:active{
   color: #CFAE00;
@@ -104,7 +101,7 @@ header {
 
 .galeria{
   margin: 0 auto;
-  width: 80%;
+  width: 70%
 }
 
 
