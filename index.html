@@ -80,7 +80,14 @@
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script type="text/javascript">
 	 $(document).ready(function(){
-		 $('.carousel').slick();
+		 $('.carousel').slick({
+  	 	infinite: true,
+  		speed: 500,
+  		fade: true,
+			arrows: false,
+  		cssEase: 'linear',
+			autoplay: true
+		});
 	 });
  </script>
 
