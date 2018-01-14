@@ -114,6 +114,7 @@ header {
 
 .carousel-item img{
   max-width: 100%;
+  margin: auto;
 }
 
 footer {
